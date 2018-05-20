@@ -33,7 +33,8 @@ The procedure I followed to tune above hyperparameters is as follow:
 
 
 ### 4. Parameter Optimization
-I optimized parameters: number of filters for each of nerual net layer, fully connected layer size, batch size and learning rate. 
+I optimized parameters: number of filters for each of nerual net layer, fully connected layer size, batch size and learning rate. I also fixed the epoch to be 15.
+
 optimized parameters: 
 	num_filters_conv1 = 16, 
 	num_filters_conv2 = 8, 
@@ -46,6 +47,7 @@ optimized parameters:
 ### 5. installation requirement and command
 pacakge used: tensorflow, opencv, numpy
 python version: python 3
+0. Make sure the dataset folder is in the same directory as the following three python files
 1. prepare datasets: python dataset_prep.py 
 2. train model: python artist_train.py
 3. test: python artist_predict.py
